@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript"],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": [],
+  "rules": {
+    "@typescript-eslint/semi": "off",
+    "object-curly-newline": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-quotes": "off",
+    "no-trailing-spaces": "off",
+    "import/extensions": "off",
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "no-plusplus": "off",
+    "react/jsx-no-bind": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "@typescript-eslint/indent": "off"
+  }
+}

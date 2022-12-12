@@ -1,0 +1,20 @@
+{
+  "cSpell.words": [
+    "bcls",
+    "Bento",
+    "Donalds",
+    "Fettucine",
+    "Mapo",
+    "Nankotsu",
+    "plusplus",
+    "tailwindcss",
+    "Vege",
+    "Yakitori"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
