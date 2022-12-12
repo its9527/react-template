@@ -15,7 +15,11 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.css$/i,
-          use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'postcss-loader'],
+          use: [
+            isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+            'css-loader',
+            'postcss-loader',
+          ],
         },
         {
           test: /\.(png|svg|jpg|gif)$/i,
@@ -38,7 +42,10 @@ module.exports = (env, argv) => {
         '@': src,
       },
     },
-    plugins: [new HtmlWebpackPlugin({ template: path.resolve(public, 'template.html') }), new MiniCssExtractPlugin()],
+    plugins: [
+      new HtmlWebpackPlugin({ template: path.resolve(public, 'template.html') }),
+      new MiniCssExtractPlugin(),
+    ],
     mode,
     entry: path.resolve(src, 'entry.tsx'),
     devtool: isProd ? 'source-map' : 'eval',
